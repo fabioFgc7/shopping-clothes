@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background: #2c2c2e;
+  color: #e9e9e9;
+}
+.cart-items:hover > .carrito {
+  display: block;
+}
+.carrito {
+  display: none;
+}
+.carrito:hover {
+  display: block;
+}
+/* Personalización del scroll para navegadores basados en WebKit */
+.carrito::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Fondo del track */
+.carrito::-webkit-scrollbar-track {
+  background: #454547;
+  border-radius: 5px;
+}
+
+/* Pulgar del scroll */
+.carrito::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Pulgar del scroll al pasar el ratón */
+.carrito::-webkit-scrollbar-thumb:hover {
+  background: #a5a4a4;
+}
+
+/* Personalización del scroll para navegadores no basados en WebKit (Mozilla Firefox) */
+.carrito {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #bebdbdb0;
+}
